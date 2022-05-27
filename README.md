@@ -18,3 +18,11 @@ We have worked with 6 languages: English-German, English-Spanish, English-French
 * A minimum of 8GB RAM. And GPU with at least 2GB RAM.
 * A minimum of 20GB hard drive space.
 * Internet connection for accessing online GPU such as Kaggle or Google Colab.
+
+
+## Translr App Video
+
+
+
+https://user-images.githubusercontent.com/54886608/170750150-87f95bec-1969-4746-a023-1a2b21254038.mp4
+
