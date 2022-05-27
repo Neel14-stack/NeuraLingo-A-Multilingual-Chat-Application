@@ -1,0 +1,14 @@
+TRANSLATION_MODELS = ["eng-deu", "deu-eng", "eng-spa", "spa-eng", "eng-ben", "ben-eng", "eng-fra", "eng-hin"]
+LANGUAGES = ["eng", "deu", "spa", "ben"]
+DATASET_LANGUAGES = ["eng", "output_eng", "spa", "output_spa", "deu", "output_deu", "ben", "output_ben"]
+DATABASE_URL = "https://translr-aae46-default-rtdb.firebaseio.com/"
+ENG_LANG = "eng"
+SPA_LANG = "spa"
+DEU_LANG = "deu"
+BEN_LANG = "ben"
+service_key = "translr-aae46-firebase-adminsdk-ahxjx-f0ee151444.json"
+vocab_size = 25000
+sequence_length = 20
+MAX_DATA_LINES = 100000
+VECTOR_OBJECT_PATH = "models/VectorObjects/"
+max_decoded_sentence_length = 20
