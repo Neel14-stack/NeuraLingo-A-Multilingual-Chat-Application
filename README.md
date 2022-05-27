@@ -27,6 +27,7 @@ We have worked with 6 languages: English-German, English-Spanish, English-French
 ## Translr App Video 📷
 
 
+https://user-images.githubusercontent.com/54886608/170759600-6294e809-406a-4490-8e9a-62da480d6c73.mp4
 
-https://user-images.githubusercontent.com/54886608/170750150-87f95bec-1969-4746-a023-1a2b21254038.mp4
 
+  
