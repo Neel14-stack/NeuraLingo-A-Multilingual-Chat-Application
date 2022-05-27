@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "944403049370",
+    "firebase_url": "https://translr-aae46-default-rtdb.firebaseio.com",
+    "project_id": "translr-aae46",
+    "storage_bucket": "translr-aae46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944403049370:android:9318819d988c7e3dffa823",
+        "android_client_info": {
+          "package_name": "com.invincible.neuralingo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944403049370-2chitj6ffgejgarqeq145ug79j368l04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7l1l-LFLBrx5ucwwh4z42W_xdp9MN4Mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944403049370-2chitj6ffgejgarqeq145ug79j368l04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

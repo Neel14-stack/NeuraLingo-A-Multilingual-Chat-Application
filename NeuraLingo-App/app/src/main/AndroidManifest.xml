@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.invincible.neuralingo">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.NeuraLingo">
+        <activity
+            android:name=".MainActivityBottomTab"
+            android:exported="true"
+            android:label="@string/title_activity_main_bottom_tab" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IntegrationActivity" />
+        <activity android:name=".ChatActivity"/>
+    </application>
+
+</manifest>

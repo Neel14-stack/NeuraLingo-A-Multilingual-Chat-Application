@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:transitionName="background"
+    android:background="@drawable/create_room_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/app_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:transitionName="profile"
+        android:src="@drawable/chat_room"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:cornerSize="50%"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.ImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/large_margin"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/image_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:iconTint="@color/white"
+        app:backgroundTint="@color/peach"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@id/app_icon"
+        app:layout_constraintEnd_toEndOf="@id/app_icon"
+        android:src="@drawable/ic_baseline_edit_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/language_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:listitem="@layout/language_item_layout"
+        tools:itemCount="10"
+        app:layout_constraintTop_toBottomOf="@id/app_icon"
+        app:layout_constraintBottom_toTopOf="@id/name_layout"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        app:boxStrokeWidth="2dp"
+        app:boxBackgroundColor="@color/real_matte_black"
+        app:hintTextColor="@color/teal_200"
+        android:textColorHint="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:padding="@dimen/general_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_recycler_view">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room Name"
+            android:inputType="text"
+            android:textColor="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/teal_200"
+        android:text="@string/create"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/name_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="@dimen/large_margin"
+        android:layout_marginBottom="@dimen/small_margin"/>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:alpha="0"
+        android:indeterminateTint="@color/black"
+        app:layout_constraintTop_toTopOf="@id/next"
+        app:layout_constraintBottom_toBottomOf="@id/next"
+        app:layout_constraintEnd_toEndOf="@id/next"
+        app:layout_constraintStart_toStartOf="@id/next"/>
+
+    <ImageButton
+        android:id="@+id/close_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/peach"
+        android:backgroundTint="@color/DarkText"
+        android:rotation="45"
+        android:layout_margin="@dimen/large_margin"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

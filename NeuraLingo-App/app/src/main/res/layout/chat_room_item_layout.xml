@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/large_margin">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/chat_room_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.ImageView"
+        android:src="@drawable/google_g_logo"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/chat_room_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/chat_room"
+        android:textSize="@dimen/general_text_size"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/chat_room_icon"
+        app:layout_constraintTop_toTopOf="@id/chat_room_icon"
+        app:layout_constraintBottom_toTopOf="@id/last_message"
+        app:layout_constraintEnd_toEndOf="@id/join_button"
+        android:layout_marginStart="@dimen/large_margin"/>
+
+    <TextView
+        android:id="@+id/last_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/last_message"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/real_matte_black"
+        app:layout_constraintStart_toEndOf="@id/chat_room_icon"
+        app:layout_constraintTop_toBottomOf="@id/chat_room_name"
+        app:layout_constraintBottom_toBottomOf="@id/chat_room_icon"
+        app:layout_constraintEnd_toEndOf="@id/join_button"
+        android:layout_marginStart="@dimen/large_margin"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/join_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/join"
+        android:backgroundTint="@color/DarkText"
+        app:cornerRadius="@dimen/large_margin"
+        app:layout_constraintTop_toTopOf="@id/chat_room_icon"
+        app:layout_constraintBottom_toBottomOf="@id/chat_room_icon"
+        android:layout_marginEnd="@dimen/general_margin"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

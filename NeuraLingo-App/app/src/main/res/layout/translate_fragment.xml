@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include
+        android:id="@+id/english_input_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/translate_output_card"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        layout="@layout/input_card_layout"/>
+
+    <TextView
+        android:id="@+id/translate_to_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/translate_to"
+        android:layout_marginStart="@dimen/large_margin"
+        android:textSize="@dimen/general_text_size"
+        app:layout_constraintTop_toTopOf="@id/translate_dropdown"
+        app:layout_constraintBottom_toBottomOf="@id/translate_dropdown"
+        app:layout_constraintStart_toStartOf="@id/translate_output_card"/>
+    <Spinner
+        android:id="@+id/translate_dropdown"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_marginStart="@dimen/general_margin"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/translate_output_card"
+        app:layout_constraintStart_toEndOf="@id/translate_to_text"
+        tools:listitem="@layout/item_spinner_layout"/>
+
+    <include
+        android:id="@+id/translate_output_card"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toBottomOf="@id/english_input_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        layout="@layout/output_card_layout"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

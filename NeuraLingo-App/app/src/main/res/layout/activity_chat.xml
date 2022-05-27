@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/real_matte_black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:subtitle=" "
+        app:title=" "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ToolbarStyle"
+        />
+    <ImageButton
+        android:id="@+id/back_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:backgroundTint="@color/real_matte_black"
+        app:layout_constraintTop_toTopOf="@id/chat_room_icon"
+        app:layout_constraintBottom_toBottomOf="@id/chat_room_icon"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/chat_room_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:padding="@dimen/general_margin"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.ImageView"
+        android:src="@drawable/google_g_logo"
+        android:layout_marginStart="@dimen/general_margin"
+        android:layout_marginTop="@dimen/general_margin"
+        app:layout_constraintStart_toEndOf="@id/back_navigate"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/chat_room_name"
+        android:layout_width="0dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/large_text_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_margin"
+        app:layout_constraintStart_toEndOf="@id/chat_room_icon"
+        app:layout_constraintTop_toTopOf="@id/chat_room_icon"
+        app:layout_constraintBottom_toBottomOf="@id/chat_room_icon"/>
+
+
+    <include
+        android:id="@+id/chat_recycler_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chat_room_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        layout="@layout/chat_recycleview_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

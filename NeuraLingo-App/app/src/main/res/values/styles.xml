@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShapeAppearanceOverlay.MyApp.ImageView" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox" parent="Base.Widget.MaterialComponents.TextInputLayout">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox
+        </item>
+        <item name="boxStrokeColor">@color/teal_200</item>
+        <item name="boxCollapsedPaddingTop">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/large_margin</item>
+        <item name="boxCornerRadiusTopStart">@dimen/large_margin</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/large_margin</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/large_margin</item>
+        <item name="boxStrokeErrorColor">@color/dark_red</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Theme.NeuraLingo">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="ToolbarTitleText" parent="@android:style/TextAppearance">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="ToolbarSubtitleText" parent="@android:style/TextAppearance">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="subtitleTextColor">@color/gray_light</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyCustomTheme" parent="MaterialSearchBarLight">
+        <item name="mt_searchBarColor">@color/searchBarPrimaryColor</item>
+        <item name="mt_dividerColor">@color/searchBarDividerColor</item>
+        <item name="mt_navIconTint">@color/searchBarNavIconTintColor</item>
+        <item name="mt_searchIconTint">@color/searchBarSearchIconTintColor</item>
+        <item name="mt_clearIconTint">@color/searchBarClearIconTintColor</item>
+        <item name="mt_menuIconTint">@color/searchBarMenuIconTintColor</item>
+        <item name="mt_backIconTint">@color/searchBarBackIconTintColor</item>
+        <item name="mt_textCursorTint">@color/searchBarCursorColor</item>
+        <item name="mt_textColor">@color/searchBarTextColor</item>
+        <item name="mt_hintColor">@color/searchBarHintColor</item>
+        <item name="mt_placeholderColor">@color/searchBarPlaceholderColor</item>
+        <item name="mt_highlightedTextColor">@color/searchBarTextHighlightColor</item>
+    </style>
+</resources>

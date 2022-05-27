@@ -1,0 +1,26 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/extra_large_margin"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardElevation="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/output_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:padding="@dimen/large_margin"
+            android:hint="@string/translated_text_will_be_shown_here"
+            android:textColorHint="@color/DarkText"
+            android:textColor="@color/DarkText"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

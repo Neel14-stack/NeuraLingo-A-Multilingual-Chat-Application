@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">NeuraLingo</string>
+    <string name="google_sign_in">Sign In with Google</string>
+    <string name="database_url">https://translr-aae46-default-rtdb.firebaseio.com/</string>
+<!--    <string name="default_web_client_id">944403049370-2chitj6ffgejgarqeq145ug79j368l04.apps.googleusercontent.com</string>-->
+    <string name="title_activity_main_bottom_nav">MainActivityBottomNav</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main_bottom_tab">MainActivityBottomTab</string>
+    <string name="tab_text_1">Translate</string>
+    <string name="tab_text_2">Chat</string>
+    <string name="tab_text_3">Profile</string>
+    <string name="enter_your_text_here_to_translate">Enter your text here to Translate...</string>
+    <string name="translated_text_will_be_shown_here">Translated text will be shown here..</string>
+    <string name="translate_to">Translate To</string>
+    <string name="sent_message">sent message</string>
+    <string name="receive_message">receive message</string>
+    <string name="chat_room">Chat Room</string>
+    <string name="join">JOIN</string>
+    <string name="create">CREATE</string>
+    <string name="message">Message</string>
+    <string name="last_message">Last sent message will appear here</string>
+    <string name="select_primary_language">Select Primary Language</string>
+    <string name="english">English</string>
+    <string name="german">German</string>
+</resources>
