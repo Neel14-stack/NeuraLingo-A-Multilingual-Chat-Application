@@ -2,7 +2,7 @@
 
 ## Overview 📝
 
-This project aims at accurate and effective translation of **English to 5 most commonly spoken languages around the world** using **neural machine translation**. This project implements NMT using two types of network: *attentional encoder-decoder network and transformer network*.
+This project aims at accurate and effective translation of **English to 5 most commonly spoken languages around the world** using **neural machine translation**. This project implements NMT using two types of network: *attentional encoder-decoder network and transformer network*.<br>
 We have worked with 6 languages: English-German, English-Spanish, English-French, EnglishHindi, English-Bengali. This project is one of the most difficult application of NLP. The types of neural networks for this purpose comes under the class of Seq2Seq models. The use of transformer network for NMT is better than that of encoder-decoder models using LSTMs. The purpose of this project is to evalute the performance of these two types of networks. Easy availability of parallel corpora of the mentioned languages was an useful for creation of training dataset for implementation. The corpus has been cleaned and necessary preprocessing is carried out prior to modelling. The encoder-decoder and transformer networks are implemented using Keras API of Tensorflow framework.
 
 
